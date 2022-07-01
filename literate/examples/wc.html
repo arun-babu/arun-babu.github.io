@@ -7,7 +7,7 @@
 <body onload="prettyPrint()">
 <section>
 <h1>1. Word Count Program</h1>
-<h4>0. Table of contents</h4><ol><li><a href=#1:1>An example of Literate programming</a></li><li><a href=#1:2></a></li><li><a href=#1:3></a></li><li><a href=#1:4></a></li><li><a href=#1:5></a></li><li><a href=#1:6></a></li><li><a href=#1:7></a></li><li><a href=#1:8></a></li><li><a href=#1:9></a></li><li><a href=#1:10></a></li><li><a href=#1:11></a></li><li><a href=#1:12></a></li><li><a href=#1:13></a></li><li><a href=#1:14></a></li><li><a href=#1:15></a></li><li><a href=#1:16></a></li><li><a href=#1:17></a></li><li><a href=#1:18></a></li><li><a href=#1:19></a></li><li><a href=#1:20></a></li></ol><a name="1:1"><div class="section"><h4>1. An example of Literate programming</h4></a>
+<h4>0. Table of contents</h4><ol><li><a href=#1:1>An example of Literate programming</a></li><li><a href=#1:2>Section # 2</a></li><li><a href=#1:3>Section # 3</a></li><li><a href=#1:4>Section # 4</a></li><li><a href=#1:5>Section # 5</a></li><li><a href=#1:6>Section # 6</a></li><li><a href=#1:7>Section # 7</a></li><li><a href=#1:8>Section # 8</a></li><li><a href=#1:9>Section # 9</a></li><li><a href=#1:10>Section # 10</a></li><li><a href=#1:11>Section # 11</a></li><li><a href=#1:12>Section # 12</a></li><li><a href=#1:13>Section # 13</a></li><li><a href=#1:14>Section # 14</a></li><li><a href=#1:15>Section # 15</a></li><li><a href=#1:16>Section # 16</a></li><li><a href=#1:17>Section # 17</a></li><li><a href=#1:18>Section # 18</a></li><li><a href=#1:19>Section # 19</a></li><li><a href=#1:20>Section # 20</a></li></ol><a name="1:1"><div class="section"><h4>1. An example of Literate programming</h4></a>
 <p>This example is a close adaptation of a tutorial example for Knuth and Levy's <code>CWEB</code> programming system,
 translated from <code>CWEB</code> to the <code>Literate</code> programming system. 
 That example in turn is based on a program by Klaus Guntermann and Joachim Schrod 
@@ -29,7 +29,7 @@ except for the grand totals over all files.
 </p>
 
 </div>
-<a name="1:2"><div class="section"><h4 class="noheading">2. </h4></a>
+<a name="1:2"><div class="section"><h4>2. Section # 2</h4></a>
 <p>Most <code>Literate</code> programs share a common structure. It’s probably a good idea to state 
 the overall structure explicitly at the outset, even though the various parts could all be 
 introduced in a piecemeal fashion.
@@ -51,7 +51,7 @@ introduced in a piecemeal fashion.
 
 </div>
 </div>
-<a name="1:3"><div class="section"><h4 class="noheading">3. </h4></a>
+<a name="1:3"><div class="section"><h4>3. Section # 3</h4></a>
 <p>We must include the standard I/O definitions, since we want to send formatted output to <em>stdout</em> and <em>stderr</em>.
 </p>
 
@@ -67,7 +67,7 @@ introduced in a piecemeal fashion.
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:2:1"><code>wc.c @ 1.2.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:4"><div class="section"><h4 class="noheading">4. </h4></a>
+<a name="1:4"><div class="section"><h4>4. Section # 4</h4></a>
 <p>The <code>status</code> variable will tell the operating system if the run was successful or not, 
 and <code>prog_name</code> is used in case there’s an error message to be printed.
 </p>
@@ -95,7 +95,7 @@ char *prog_name;    /* who we are */
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:2:1"><code>wc.c @ 1.2.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:5"><div class="section"><h4 class="noheading">5. </h4></a>
+<a name="1:5"><div class="section"><h4>5. Section # 5</h4></a>
 <p>Now we come to the general layout of the <code>main()</code> function.
 </p>
 
@@ -117,7 +117,7 @@ int main(int argc, char **argv)
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:2:1"><code>wc.c @ 1.2.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:6"><div class="section"><h4 class="noheading">6. </h4></a>
+<a name="1:6"><div class="section"><h4>6. Section # 6</h4></a>
 <p>If the first argument begins with a '<code>-</code>', the user is choosing the desired counts and 
 specifying the order in which they should be displayed. Each selection is given by the 
 initial character (lines, words, or characters). For example, '<code>-cl</code>' would cause just 
@@ -142,7 +142,7 @@ int silent = 0;    /* nonzero if the silent option was selected */
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:5:1"><code>The main program @ 1.5.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:7"><div class="section"><h4 class="noheading">7. </h4></a>
+<a name="1:7"><div class="section"><h4>7. Section # 7</h4></a>
 
 <br><a name='1:7:1'></a><div class="codeblock">
 <div class=code_background style='border:1px solid black'><center><h4 style='font-family:Monaco,"Lucida Console",monospace'><span class=code_title>Set up option selection</span></h4><hr></center>
@@ -162,7 +162,7 @@ file_count = argc - 1;
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:5:1"><code>The main program @ 1.5.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:8"><div class="section"><h4 class="noheading">8. </h4></a>
+<a name="1:8"><div class="section"><h4>8. Section # 8</h4></a>
 <p>Now we scan the remaining arguments and try to open a file, if possible. The file 
 is processed and its statistics are given. We use a <code>do ... while</code> loop because 
 we should read from the standard input if no file name is given.
@@ -186,7 +186,7 @@ do {
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:5:1"><code>The main program @ 1.5.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:9"><div class="section"><h4 class="noheading">9. </h4></a>
+<a name="1:9"><div class="section"><h4>9. Section # 9</h4></a>
 <p>Here’s the code to open the file. A special trick allows us to handle input from <em>stdin</em> 
 when no name is given. Recall that the file descriptor to <em>stdin</em> is <code>0</code>; that’s what we 
 use as the default initial value.
@@ -202,7 +202,7 @@ int fd = 0;
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:5:1"><code>The main program @ 1.5.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:10"><div class="section"><h4 class="noheading">10. </h4></a>
+<a name="1:10"><div class="section"><h4>10. Section # 10</h4></a>
 
 <br><a name='1:10:1'></a><div class="codeblock">
 <div class=code_background style='border:1px solid black'><center><h4><a style='text-decoration:none;color:blue;font-family:Monaco,"Lucida Console",monospace' href="wc.html#1:4:1"><span class=code_title>Preprocessor definitions</span> <font color=#008000>+=</font></a></h4><hr></center>
@@ -229,7 +229,7 @@ if (file_count &gt; 0 &amp;&amp; (fd = open(*(++argv), READ_ONLY)) &lt; 0) {
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:8:1"><code>Process all the files @ 1.8.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:11"><div class="section"><h4 class="noheading">11. </h4></a>
+<a name="1:11"><div class="section"><h4>11. Section # 11</h4></a>
 
 <br><a name='1:11:1'></a><div class="codeblock">
 <div class=code_background style='border:1px solid black'><center><h4 style='font-family:Monaco,"Lucida Console",monospace'><span class=code_title>Close file</span></h4><hr></center>
@@ -241,7 +241,7 @@ close(fd);
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:8:1"><code>Process all the files @ 1.8.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:12"><div class="section"><h4 class="noheading">12. </h4></a>
+<a name="1:12"><div class="section"><h4>12. Section # 12</h4></a>
 <p>We will do some homemade buffering in order to speed things up: Characters will be 
 read into the buffer array before we process them. To do this we set up appropriate 
 pointers and counters.
@@ -263,7 +263,7 @@ long word_count, line_count, char_count;
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:5:1"><code>The main program @ 1.5.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:13"><div class="section"><h4 class="noheading">13. </h4></a>
+<a name="1:13"><div class="section"><h4>13. Section # 13</h4></a>
 
 <br><a name='1:13:1'></a><div class="codeblock">
 <div class=code_background style='border:1px solid black'><center><h4 style='font-family:Monaco,"Lucida Console",monospace'><span class=code_title>Initialize pointers and counters</span></h4><hr></center>
@@ -277,7 +277,7 @@ in_word = 0;
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:8:1"><code>Process all the files @ 1.8.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:14"><div class="section"><h4 class="noheading">14. </h4></a>
+<a name="1:14"><div class="section"><h4>14. Section # 14</h4></a>
 <p>The grand totals must be initialized to zero at the beginning of the program. 
 If we made these variables local to main, we would have to do this initialization explicitly; 
 however, C’s globals are automatically zeroed. (Or rather, "statically zeroed.") (Get it?)
@@ -294,7 +294,7 @@ long tot_word_count, tot_line_count, tot_char_count;
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:2:1"><code>wc.c @ 1.2.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:15"><div class="section"><h4 class="noheading">15. </h4></a>
+<a name="1:15"><div class="section"><h4>15. Section # 15</h4></a>
 <p>The present section, which does the counting that is <code>wc</code>'s <em>raison d'être</em>, was actually 
 one of the simplest to write. We look at each character and change state if it begins or ends a word.
 </p>
@@ -322,7 +322,7 @@ while (1) {
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:8:1"><code>Process all the files @ 1.8.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:16"><div class="section"><h4 class="noheading">16. </h4></a>
+<a name="1:16"><div class="section"><h4>16. Section # 16</h4></a>
 <p>Buffered I/O allows us to count the number of characters almost for free.
 </p>
 
@@ -342,7 +342,7 @@ if (ptr &gt;= buf_end) {
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:15:1"><code>Scan file @ 1.15.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:17"><div class="section"><h4 class="noheading">17. </h4></a>
+<a name="1:17"><div class="section"><h4>17. Section # 17</h4></a>
 <p>It’s convenient to output the statistics by defining a new function <code>wc_print()</code>; 
 then the same function can be used for the totals. Additionally we must decide here 
 if we know the name of the file we have processed or if it was just <em>stdin</em>.
@@ -362,7 +362,7 @@ if (!silent) {
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:8:1"><code>Process all the files @ 1.8.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:18"><div class="section"><h4 class="noheading">18. </h4></a>
+<a name="1:18"><div class="section"><h4>18. Section # 18</h4></a>
 
 <br><a name='1:18:1'></a><div class="codeblock">
 <div class=code_background style='border:1px solid black'><center><h4 style='font-family:Monaco,"Lucida Console",monospace'><span class=code_title>Update grand totals</span></h4><hr></center>
@@ -376,7 +376,7 @@ tot_char_count += char_count;
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:8:1"><code>Process all the files @ 1.8.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:19"><div class="section"><h4 class="noheading">19. </h4></a>
+<a name="1:19"><div class="section"><h4>19. Section # 19</h4></a>
 <p>We might as well improve a bit on <code>UNIX</code>’s <code>wc</code> by displaying the number of files too.
 </p>
 
@@ -394,7 +394,7 @@ if (file_count &gt; 1 || silent) {
 <blockquote style='border-left:10px solid #90C796'>Used in:<ol><li><a style='text-decoration:none' href="wc.html#1:5:1"><code>The main program @ 1.5.1</code></a></li></ol></blockquote>
 </div>
 </div>
-<a name="1:20"><div class="section"><h4 class="noheading">20. </h4></a>
+<a name="1:20"><div class="section"><h4>20. Section # 20</h4></a>
 <p>Here now is the function that prints the values according to the specified options. 
 The calling routine is supposed to supply a newline. If an invalid option character 
 is found we inform the user about proper usage of the command. Counts are printed 
